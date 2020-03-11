@@ -1,0 +1,23 @@
+{
+  "name": "internshipproject",
+  "version": "1.0.0",
+  "description": "Internship Project",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.9.4",
+    "nodemailer": "^6.4.5",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+    
+  },
+  "author": "Shrikant Pdhy",
+  "license": "ISC"
+}
