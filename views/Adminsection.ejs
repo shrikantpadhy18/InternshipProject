@@ -1,0 +1,16 @@
+<form action='/user/section' method="POST" >
+<center><button>Click Here See Student Details</button></center>
+
+</form>
+
+len:<%=datas.length %>
+<% if( datas.length > 0){  %>
+    <h1>yuu</h1>
+<% datas.forEach(function(value){ %>
+    <div class="card" style="width: 18rem;">
+        <h4 class="card-title" style="color:red;"><%= value.name %></h4>
+        <h4 class="card-title" style="color:red;"><%= value.email %></h4>
+        
+        </div>
+<% }); %> 
+<% }%>

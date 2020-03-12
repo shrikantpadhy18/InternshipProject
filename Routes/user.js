@@ -46,8 +46,14 @@ router.post('/login',(req,res)=>{
         User.findOne({email:email,password:password}).then(user=>{
             if(user){
                 
+                if(user.email!='dyp@gmail.com'){
                 ssn=user;
                 res.render('dashboard',{user:ssn});
+                }
+                else if(user.email=='dyp@gmail.com')
+                {
+                    res.render('Adminsection',{datas:[]});
+                }
             }
            
         }).catch(err=>console.log(err));
@@ -55,5 +61,24 @@ router.post('/login',(req,res)=>{
 })
 router.get('/logout',(req,res)=>{
     res.render('homepage');
+})
+
+let datas=[]
+router.post('/section',(req,res)=>{
+    
+let args=[]
+    
+    User.find().then(data=>{
+        if(data){
+            console.log(data);
+            args=data;
+        }
+    })
+    
+    args.forEach(function(value){
+        datas.push(`Name: ${value.name}\nEmail:${value.email}\nPassword:${value.password}\n ID: value.id <a>Delete</a> <a>Edit</a>\n\n\n`)
+    })
+    console.log(datas);
+    res.render('Adminsection',{datas:args});
 })
 module.exports=router;
