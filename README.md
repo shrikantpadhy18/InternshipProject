@@ -7,8 +7,7 @@
 
 
 <a href="https://github.com/shrikantpadhy18/Covid19">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shrikantpadhy18
-" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shrikantpadhy18"/>
 </a>
 
 
