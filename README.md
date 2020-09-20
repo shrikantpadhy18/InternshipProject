@@ -1,4 +1,5 @@
 # InternshipProject
 
-
-<a href="https://github-readme-stats.vercel.app/api?username=shrikantpadhy18"></a>
+<html>
+<a href="https://github.com/shrikantpadhy18/github-readme-stats"></a>
+</html>
